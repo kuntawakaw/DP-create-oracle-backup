@@ -18,7 +18,7 @@ done
 #create integration script to paste in db server
 echo "paste below in DB server"
 echo " "
-echo "/opt/omni/lbin/util_oracle8.pl -config -dbname $DBNAME  -orahome $ORAHOME -prmuser omnibackup -prmpasswd omni_$DBNAME -prmservice $DBNAME -rcuser rman_$DBNAME -rcpasswd dcc_rman -rcservice $RC -client $CLIENT"
+echo "/opt/omni/lbin/util_oracle8.pl -config -dbname $DBNAME  -orahome $ORAHOME -prmuser $DBUSER -prmpasswd $DBPASSWD -prmservice $DBNAME -rcuser $RCUSER -rcpasswd $RCPASSWD -rcservice $RC -client $CLIENT"
 echo ""
 echo " ================================================================"
 echo " once you get RETVAL 0, please press any key. ctrl +c if you want to abort"
